@@ -13,7 +13,7 @@ export default function AuthScreen() {
       behavior={Platform.OS === "android" ? "padding" : "height"}
       styles={styles.container}
     >
-      <View>
+      <View styles={styles.content}>
         <Text>{isSignUp ? "Buat Akun" : "selamat datang"}</Text>
         <TextInput
           label="Email"
