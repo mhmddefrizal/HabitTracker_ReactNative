@@ -37,3 +37,5 @@ export default function AuthScreen() {
     </KeyboardAvoidingView>
   );
 }
+
+const styles = StyleSheet.create({});
