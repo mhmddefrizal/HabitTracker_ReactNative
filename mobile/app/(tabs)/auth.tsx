@@ -9,7 +9,7 @@ export default function AuthScreen() {
             <TextInput label="Email" autoCapitalize="none" keyboardType="email-address" placeholder="emailkamu@gmail.com" mode="outlined" ></TextInput>
             <TextInput label="Password" autoCapitalize="none" keyboardType="email-address" mode="outlined" ></TextInput>
 
-            <button mode="contained">Buat Akun</button>
+            <button mode="contained">{isSignUp ? "Buat Akun" : "login"}</button>
 
             <button mode="text">Sudah punya akun?</button>
         </View>
