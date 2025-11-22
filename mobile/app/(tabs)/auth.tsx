@@ -5,7 +5,7 @@ export default function AuthScreen() {
     const [isSignUp, setIsSignUp] = useState<Boolean>(false);
     return <KeyboardAvoidingView behavior={Platform.OS === "android" ? "padding" : "height"}>
         <View>
-            <Text>Halaman Buat Akun</Text>
+            <Text>{isSignUp ? "Buat Akun" : "selamat datang"}</Text>
             <TextInput label="Email" autoCapitalize="none" keyboardType="email-address" placeholder="emailkamu@gmail.com" mode="outlined" ></TextInput>
             <TextInput label="Password" autoCapitalize="none" keyboardType="email-address" mode="outlined" ></TextInput>
 
