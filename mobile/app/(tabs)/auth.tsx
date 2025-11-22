@@ -11,6 +11,7 @@ export default function AuthScreen() {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "android" ? "padding" : "height"}
+      styles={styles.container}
     >
       <View>
         <Text>{isSignUp ? "Buat Akun" : "selamat datang"}</Text>
