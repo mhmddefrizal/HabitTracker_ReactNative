@@ -14,7 +14,7 @@ export default function AuthScreen() {
       styles={styles.container}
     >
       <View styles={styles.content}>
-        <Text>{isSignUp ? "Buat Akun" : "selamat datang"}</Text>
+        <Text styles={styles.title}>{isSignUp ? "Buat Akun" : "selamat datang"}</Text>
         <TextInput
           label="Email"
           autoCapitalize="none"
