@@ -3,6 +3,11 @@ import { Text, TextInput } from "react-native-paper";
 
 export default function AuthScreen() {
   const [isSignUp, setIsSignUp] = useState<Boolean>(false);
+
+  const handleSwitchMode = () => {
+    setIsSignUp((prev) => !prev);
+  };
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "android" ? "padding" : "height"}
