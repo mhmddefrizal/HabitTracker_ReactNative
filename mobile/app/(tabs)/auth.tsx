@@ -30,7 +30,7 @@ export default function AuthScreen() {
 
         <button mode="contained">{isSignUp ? "Buat Akun" : "login"}</button>
 
-        <button mode="text">
+        <button mode="text" onPress={handleSwitchMode}>
           {isSignUp ? "Sudah punya akun? login" : "belum punya akun? buat akun"}
         </button>
       </View>
