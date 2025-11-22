@@ -48,5 +48,10 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 16,
         justifyContent: "center",
+    },
+    title: {
+        flex: 1,
+        padding: 16,
+        justifyContent: "center",
     }
 });
